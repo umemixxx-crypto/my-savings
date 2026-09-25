@@ -16,6 +16,14 @@ body{
   min-height:100vh;
   background:#101a79 url("background.png") center center / cover fixed no-repeat;
 }
+@media (max-width: 700px){
+  body{
+    background-image: url("background-mobile.png");
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}  
 body:before,body:after{
   content:"✦   ·   ✧      ·   ✦       ·   ✧";
   position:fixed;inset:0;pointer-events:none;z-index:0;
